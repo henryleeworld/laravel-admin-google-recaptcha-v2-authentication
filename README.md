@@ -1,6 +1,6 @@
-# Laravel 6 後臺管理 Google reCAPTCHA v2 （以問題驗證要求）登入
+# Laravel 10 後臺管理 Google reCAPTCHA v2 （以問題驗證要求）登入
 
-在後臺登入頁面中確保只有擁有正確密碼的真人可以存取帳戶，藉先進的風險分析引擎和自適應驗證來防止自動化軟體在網站上進行濫用活動，且可以讓真人輕鬆通過。Laravel 6 後臺管理 Google reCAPTCHA v2 （以問題驗證要求）登入主要是用的 [QuickAdminPanel](https://quickadminpanel.com) 生成的，除了一些定制代碼，可依需求彈性改造的工具。
+在後臺登入頁面中確保只有擁有正確密碼的真人可以存取帳戶，藉先進的風險分析引擎和自適應驗證來防止自動化軟體在網站上進行濫用活動，且可以讓真人輕鬆通過。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -12,7 +12,7 @@ $ git clone
 ```sh
 $ composer install
 ```
-- 產⽣ Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
+- 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
 ```sh
 $ php artisan key:generate
 ```
@@ -29,5 +29,5 @@ $ php artisan migrate --seed
 ![](https://i.imgur.com/KRqwIr8.png)
 > 申請 Google reCAPTCHA v2 機器人驗證機制
 
-![](https://i.imgur.com/qB5lfKj.png)
+![](https://i.imgur.com/iRCaO3m.png)
 > 使用現有的帳號和勾選「我不是機器人」或是需再做視力測驗登入
