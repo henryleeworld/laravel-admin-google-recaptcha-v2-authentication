@@ -1,4 +1,4 @@
-# Laravel 10 後臺管理 Google reCAPTCHA v2 （以問題驗證要求）登入
+# Laravel 11 後臺管理 Google reCAPTCHA v2 （以問題驗證要求）登入
 
 在後臺登入頁面中確保只有擁有正確密碼的真人可以存取帳戶，藉先進的風險分析引擎和自適應驗證來防止自動化軟體在網站上進行濫用活動，且可以讓真人輕鬆通過。
 
@@ -21,13 +21,13 @@ $ php artisan key:generate
 $ php artisan migrate --seed
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
-- 你可以登入經由 `/login` 來進行登入，預社的電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ 。
+- 你可以登入經由 `/login` 來進行登入，預設的電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ 。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/KRqwIr8.png)
+![](https://i.imgur.com/OZdgbhf.png)
 > 申請 Google reCAPTCHA v2 機器人驗證機制
 
-![](https://i.imgur.com/iRCaO3m.png)
+![](https://i.imgur.com/ap7Sjui.png)
 > 使用現有的帳號和勾選「我不是機器人」或是需再做視力測驗登入
