@@ -1,6 +1,6 @@
-# Laravel 11 後臺管理 Google reCAPTCHA v2 （以問題驗證要求）登入
+# Laravel 12 後臺管理 Google reCAPTCHA v2 （以問題驗證要求）登入
 
-在後臺登入頁面中確保只有擁有正確密碼的真人可以存取帳戶，藉先進的風險分析引擎和自適應驗證來防止自動化軟體在網站上進行濫用活動，且可以讓真人輕鬆通過。
+在後臺登入頁面中確保只有擁有正確密碼的真人可以存取帳號，藉先進的風險分析引擎和自適應驗證來防止自動化軟體在網站上進行濫用活動，且可以讓真人輕鬆通過。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -16,18 +16,27 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
-- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移，並執行資料庫填充（如果要測試的話）。
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
 ```sh
-$ php artisan migrate --seed
+$ php artisan migrate
+```
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
+```sh
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
-- 你可以登入經由 `/login` 來進行登入，預設的電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ 。
+- 你可以經由 `/register` 來進行註冊。
+- 完成註冊後，可以經由 `/login` 來進行登入。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/OZdgbhf.png)
+![](https://i.imgur.com/6ob3XYW.png)
 > 申請 Google reCAPTCHA v2 機器人驗證機制
 
-![](https://i.imgur.com/ap7Sjui.png)
+![](https://i.imgur.com/GcTzfmy.png)
 > 使用現有的帳號和勾選「我不是機器人」或是需再做視力測驗登入
